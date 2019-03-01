@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Register</title> 
+ <link rel="StyleSheet" type="text/css" href="style.css" />
+ <script src="menu.js"></script>
+ <style type="text/css">
+<!--
+.style1 {color:black;
+	font-weight: bold;
+}
+.style3 {color:black}
+.style4 {color: #000000
+}
+-->
+ </style>
+</head>
+<body background="comp.jpg">
+
+<div class="separator" style="clear: both; text-align: center;">
+<br>
+<div class="wapfever" align="center">Financial Information
+</div>
+<br>
+
+<form name="Register" method="POST" onSubmit="return validate()" action="doRegiforfinance.php" >
+<p><center>
+<table class="layouttable">
+<tr>     
+        <td>
+            <table width="100%" class="contenttable" >
+                <tr>
+                  <td><fieldset>
+                  <legend align="center">
+                  <table align="center">
+                    <tr><span class="style4">Financial Details</span> </tr>
+                  </table>
+                  </legend>
+                  <table width="500" align="center">
+                    <tr>
+                      <td width="258" height="29"><span class="style4">UID</span></td>
+                      <td width="226"><input name="UID" type="text"/></td>
+                    </tr>
+					<tr>
+                      <td width="258" height="29"><span class="style4">FIRST NAME </span></td>
+                      <td width="226"><input name="F_Name" type="text"/></td>
+                    </tr>
+                    <tr>
+                      <td><span class="style4">Bank </span></td>
+                      <td><input name="Bank" type="text" /></td>
+                    </tr>
+                     <tr>
+                      <td><span class="style4">Account Number</span></td>
+                      <td><input name="Acc_No" type="text">
+                        </td>
+                    </tr>
+<td><input name="submit" type="submit" value="Register"/>
+    </td>
+                    </tr>
+
+                    </table>
+</center></p>
+                  </fieldset></td>
+                </tr>
+            </table>
+        </td>
+  </tr>                     
+</table> 
+</form>
+</html>
+
+<script language="javascript">
+function validate()
+{
+if(document.Register.F_Name.value=="")
+	{
+		alert("Please enter first name");
+		document.Register.F_Name.focus();
+		return false;
+	}
+
+if(document.Register.Bank.value=="")
+	{
+		alert("Please enter the banks name");
+		document.Register.Bank.focus();
+		return false;
+	}
+
+if(document.Register.Acc_No.value=="")
+	{
+		alert("Please enter your account number");
+		document.Register.Acc_No.focus();
+		return false;
+	}
+}
+
+</SCRIPT>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Register</title> 
+ <link rel="StyleSheet" type="text/css" href="style.css" />
+ <script src="menu.js"></script>
+ <style type="text/css">
+<!--
+.style1 {color:black;
+	font-weight: bold;
+}
+.style3 {color:black}
+.style4 {color: #000000
+}
+-->
+ </style>
+</head>
+<body background="comp.jpg">
+
+<div class="separator" style="clear: both; text-align: center;">
+<br>
+<div class="wapfever" align="center">Information About Crime 
+</div>
+<br>
+<form name="Criminal Information" method="POST" onSubmit="return validate()" action="doRegiforcriminal.php" >
+<p>
+<center>
+<table class="layouttable">
+<tr>     
+        <td>
+            <table width="100%" class="contenttable" >
+                <tr>
+                  <td><fieldset>
+                  <legend align="center">
+                  <table align="center">
+                    <tr><span class="style4">Criminal Details</span> </tr>
+                  </table>
+                  </legend>
+                  <table width="500" align="center">
+                    <tr>
+                      <td width="258" height="29"><span class="style4">UID</span></td>
+                      <td width="226"><input name="UID" type="text"/></td>
+                    </tr>
+					<tr>
+                      <td width="258" height="29"><span class="style4">FIRST NAME </span></td>
+                      <td width="226"><input name="F_Name" type="text"/></td>
+                    </tr>
+<tr>
+                      <td><span class="style4">LAST NAME </span></td>
+                      <td><input name="L_Name" type="text" /></td>
+                    </tr>                    
+<tr>
+                      <td><span class="style4">Case Number</span></td>
+                      <td><input name="case_no" type="text" /></td>
+                    </tr>
+                     <tr>
+                      <td>crime</td>
+                      <td><span class="style4">
+                        <textarea name="crime" cols="25" rows="5" id="crime"></textarea>
+                        
+                      </span></td>
+                    </tr>
+                    <tr>
+                      <td>Date Of Crime</td>
+                      <td><input name="date_of_crime" type="date_of_crime"/></td>
+                    </tr>
+
+                    <tr>
+                      <td>Sentence</td>
+                      <td><input name="sentence" type="sentence"/></td>
+                    </tr>
+
+
+
+
+<td><input name="submit" type="submit" value="Register"/>
+    </td>
+                    </tr>
+
+                    </table>
+                  </fieldset></td>
+                </tr>
+            </table>
+        </td>
+  </tr>
+</table> 
+</center>
+</p>
+</form>
+</html>
+
+<script language="javascript">
+function validate()
+{
+if(document.Register.F_Name.value=="")
+	{
+		alert("Please enter first name");
+		document.Register.F_Name.focus();
+		return false;
+	}
+if(document.Register.L_Name.value=="")
+	{
+		alert("Please enter lastname");
+		document.Register.L_Name.focus();
+		return false;
+	}
+
+
+if(document.Register.case_no.value=="")
+	{
+		alert("Please enter the case number");
+		document.Register.case_no.focus();
+		return false;
+	}
+
+if(document.Register.date_of_crime.value=="")
+	{
+		alert("Please enter the date of crime");
+		document.Register.date_of_crime.focus();
+		return false;
+	}
+if(document.Register.sentence.value=="")
+	{
+		alert("Please enter the sentence");
+		document.Register.sentence.focus();
+		return false;
+	}
+
+}
+
+</SCRIPT>
+
+

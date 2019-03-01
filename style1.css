@@ -1,0 +1,96 @@
+.mainlinks {
+    background-color: #f2f9ff;
+    color: #444444;
+    background: url(p1.jpg);
+    border-width: 1px;
+    border-color: #def;
+    border-style: solid;
+    padding-top: 3px;
+    padding-left: 1px;
+    padding-bottom: 3px;
+    font-weight: normal;
+	font-size: large;
+	font-style:bold;
+    margin-left: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
+
+.wapfever {
+    background-color: black;
+    color: #fff;
+    padding: 2px 2px 2px 3px;
+    background:#ffb6c1;
+    border-top: 2px solid #ffb6c1;
+    font-weight: bold;
+    font-size: large;
+    text-shadow: 1px 1px 1px #1669a3;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+body {
+background: url(p1.jpg);
+    text-align: left;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    max-width: 1000px;
+    margin: auto;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+Inherited from div.foncity
+.foncity {
+    color: #505050;
+    font-size: normal;
+    border-width: 1px;
+    border-color: #dbeadc;
+    border-style: solid;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-shadow: 2px 2px #ececec;
+}
+.foncity {
+    color: #505050;
+    font-size: normal;
+    border-width: 1px;
+    border-color: #dbeadc;
+    border-style: solid;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-shadow: 2px 2px #ececec;
+}
+.foncity {
+    color: #505050;
+    font-size: normal;
+    border-width: 1px;
+    border-color: #dbeadc;
+    border-style: solid;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-shadow: 2px 2px #ececec;
+}

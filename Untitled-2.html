@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title> Criminal Database </title> 
+ <link rel="stylesheet" href="jhan.css"/>
+ <script src="menu.js"></script>
+</head>
+<body>
+<table class="layouttable">
+    <tr>
+        <td>
+            <div id="menu">
+    <div id ="innermenu">
+        <ul>
+             <li> <a href = "Search1.php">PERSONAL</a> </li>
+            <li> <a href = "Criminal.php">CRIMINAL</a> </li>
+            <li> <a href = "Financial.php">FINANCIAL</a> </li>
+            <li> <a href = "Medical.php">MEDICAL</a> </li>
+
+        </ul>        
+    </div>
+</div>
+        </td>
+    </tr>
+<tr>     
+        <td>
+            <table width="100%" class="contenttable" >
+                <tr>
+                   </tr>
+            </table>
+        </td>
+    </tr>
+
+ <?php
+
+$con=mysqli_connect("localhost","root","","tables") or die(mysql_error());
+//mysql_select_db("tables") or die (mysql_error());
+
+
+
+
+
+$result=mysqli_query($con, "select * from register,criminal where register.UID=criminal.UID;") or die(mysql_error());
+echo "<br><br><table border=1>";
+echo "<tr><th>UID</th><th>FIRST NAME</th><th>LAST NAME</th><th>CASE NUMBER</th><th>CRIME</th><th>DATE</th><th>SENTENCE</th></tr>";
+
+while($row=mysqli_fetch_array($result))
+{
+ echo "<tr><td>";
+ echo  $row['UID'];
+ echo "</td><td>";
+ echo  $row['F_Name'];
+ echo "</td><td>";
+ echo $row['L_Name'];
+ echo "</td><td>";
+ echo  $row['case_no'];
+ echo "</td><td>";
+ echo $row['crime'];
+ echo "</td><td>";
+ echo  $row['date_of_crime'];
+ echo "</td><td>";
+ echo $row['sentence'];
+ echo "</td></tr>"; 
+}
+
+echo "</table>";
+mysqli_close($con);
+?>
+
+
+   <tr>
+        <td>
+            <div id="footer">
+<marquee  behavior="alternate" >
+   Chirag/Swati 
+</marquee>
+</div>        </td>
+    </tr>                           
+</table> 
